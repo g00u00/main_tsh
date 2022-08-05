@@ -4,6 +4,8 @@ import Navigation from "./Navigation";
 import ContentItem from "./ContentItem";
 import Contents from "./Contents";
 import Footer from "./Footer";
+import Inputs from "./Inputs";
+
 function Container() {
     return (
         <div className="container">
@@ -12,7 +14,8 @@ function Container() {
 {/*            <ContentItem/>
             <ContentsNav/>
 */}
-            <Contents />
+            <Contents  />
+            <Inputs />
             <Footer/>
         </div>
     );

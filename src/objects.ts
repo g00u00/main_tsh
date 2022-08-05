@@ -1,8 +1,8 @@
-import {IObjects} from "./models"
+import {IObjects} from "./object_interface"
 
 export const objects: IObjects[] = [
     {
-        id: 1,
+        id: 10,
         title: 'Текущее',
         content:
             '\n' +
@@ -33,12 +33,12 @@ export const objects: IObjects[] = [
             'https://www.reg.ru/user/account/#/\n'
     },
     {
-        id: 2,
+        id: 20,
         title: 'Заголовок2',
         content: 'Содержание2'
     },
     {
-        id: 21,
+        id: 30,
         title: 'Заголовок21',
         content: 'Содержание2'
     },

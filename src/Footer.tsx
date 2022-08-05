@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
     return (
-        <div className="card card-header">
+        <div className="card card-body">
                 Контакты
             </div>
     );

@@ -1,43 +1,39 @@
 import React, {useState} from 'react'
-import {IObjects} from "./models"
-
+import {IObjects} from "./object_interface"
 
 interface ObjectsProps {
     record: IObjects
 }
 
 export function Object({record}: ObjectsProps) {
-    console.log({record})
-    const [info, setInfo] = useState(false)
+    console.table(record)
 
-    const classNameActive=info ? 'active fw-semibold border-botton-0' : ''
-    const classNameCurren=['nav-link', classNameActive]
+    const [rend, setrend] = useState(false)
+    const classNameActive=rend ? 'active fw-semibold' : ''
+    const classNameCurren=["nav-link", classNameActive]
 
     return (
-        <div className="card-body border border-1 border-top-0 p-0">
+        <div className="card-body border border-1 border-top-0 p-0" >
             <ul className="nav nav-tabs border border-top-0 d-flex justify-content-between">
-{/*
-                <li><a className="nav-link" onClick={() => setInfo(true)}>{record.title}</a></li>
-*/}
-                <li><a className={classNameCurren.join(' ')}  onClick={() => setInfo(prevState => !prevState)}>{record.title}</a></li>
-                <li><a className="nav-link  text-danger" onClick={() => setInfo(false)}>X</a></li>
+                <li  className={classNameCurren.join(' ')}  onClick={() => setrend(prevState => !prevState)} >{record.title} </li>
+                <li  className="nav-link  text-danger" onClick={() => setrend(false)} >X</li>
             </ul>
             {
-                info &&
-                <pre> {record.content} </pre>
+                rend &&
+                <pre style={{backgroundColor: 'lightblue'}}> {record.content} </pre>
             }
-        </div>
+         </div>
 
 
         /*        <div className="accordion-item">
                     <h2 className="accordion-header" >
                         <button type="button" className="accordion-button"   >
-                            <a onClick={() => setInfo(true)}>{record.title}</a>
-                            <a className="text-danger" onClick={() => setInfo(false)}>X</a>
+                            <a onClick={() => setrend(true)}>{record.title}</a>
+                            <a className="text-danger" onClick={() => setrend(false)}>X</a>
                         </button>
                     </h2>
                     {
-                        info &&
+                        rend &&
                         <div id="collapseOne"
                              data-bs-parent="#accordionExample">
                             <div className="accordion-body">
