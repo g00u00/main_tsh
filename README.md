@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 
-##npm install
+## `npm install` - после git pull ...
 
 
 
