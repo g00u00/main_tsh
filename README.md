@@ -1,7 +1,13 @@
 # Getting Started with Create React App
 
+##  после git pull ...
 
-## `npm install` - после git pull ...
+npm install 
+
+yarn install
+
+yarn start
+ 
 
 
 
