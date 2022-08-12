@@ -1,7 +1,7 @@
 
 ### PyCharm 
 
-get from VCs > https://github.com/g00u00/main_tsh.git > Directory >new folder > открыть/закрыть
+get from VCs > https://github.com/g00u00/main_tsh.git > Directory >new folder > открыть/закрыть > run Yarn install (в всплывающем окне)
 
 ###  или git pull ...
 
